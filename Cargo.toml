@@ -1,0 +1,7 @@
+[workspace]
+resolver = "2"
+members = ["core", "web"]
+
+[profile.release]
+lto = true
+opt-level = "s"

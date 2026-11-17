@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>距离边界认证仿真 · 中继攻击防御演示</title>
+    <link rel="stylesheet" href="/styles-e2dde24820d9b1ea.css" integrity="sha384-yCrMqjJeaJpOTpFZ9VdPrOguWgW63bmEcAItpUhLbfmmQixVSEr7xD2xnl4B2Vqg"/>
+    
+<script type="module">
+import init, * as bindings from '/db-web-5c0cc81bb415760c.js';
+const wasm = await init({ module_or_path: '/db-web-5c0cc81bb415760c_bg.wasm' });
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script>
+  <link rel="modulepreload" href="/db-web-5c0cc81bb415760c.js" crossorigin="anonymous" integrity="sha384-Z0obwECQqf1Au7tNy+hluzN3I2HkjpJnf0wu0ikvyBS9T2Gd1DOcu9TFayH5V48P"><link rel="preload" href="/db-web-5c0cc81bb415760c_bg.wasm" crossorigin="anonymous" integrity="sha384-b+5wJ6ldSnhh2S+7EfvhBKFvkIgXFgXtzeRoR1VnQxyCWgx7hOifC76p/kS8OXmP" as="fetch" type="application/wasm"></head>
+</html>

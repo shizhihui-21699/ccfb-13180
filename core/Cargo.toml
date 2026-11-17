@@ -1,0 +1,9 @@
+[package]
+name = "db-core"
+version = "0.1.0"
+edition = "2021"
+description = "Distance-bounding authentication protocol simulation core (relay-attack defense)"
+
+[lib]
+name = "db_core"
+path = "src/lib.rs"

@@ -1,0 +1,19 @@
+[package]
+name = "db-web"
+version = "0.1.0"
+edition = "2021"
+description = "Yew demo UI for distance-bounding relay-attack simulation"
+
+[dependencies]
+db-core = { path = "../core" }
+yew = { version = "0.21", features = ["csr"] }
+wasm-bindgen = "0.2"
+web-sys = { version = "0.3", features = [
+    "HtmlInputElement",
+    "PointerEvent",
+    "Element",
+    "SvgElement",
+    "SvgsvgElement",
+    "DomRect",
+    "Window",
+] }
